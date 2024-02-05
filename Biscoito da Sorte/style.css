@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+main {
+
+  width: min(42.8rem, 90%);
+  border-radius: .6rem;
+  background: #FFFFFF;
+  box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 80%);
+  padding: 4.8rem 6.4rem 4.8rem;
+}
+
+.hide {
+  display: none;
+}
+
+h1{
+font-family: 'Montserrat', sans-serif;
+font-size: 2.4rem;
+margin-bottom: 1.4rem;
+color: #34355B;
+text-align: center;
+}
+
+p{
+  font-size: 1.5rem;
+  margin-bottom: 2.0rem;
+  text-align: center;
+}
+
+#cookie1 {
+  margin-top: 2.0rem;
+  width: min(30rem, 100%);
+  cursor: pointer;
+  
+}
+.animada:hover{
+  animation: moveImage 0.4s ease infinite ;
+
+}
+
+@keyframes moveImage {
+  0%, 100% {
+    transform: translate(0, 0);
+}
+25%, 75% {
+    transform: translate(-5px, -5px);
+}
+50% {
+    transform: translate(5px, 5px);
+}
+}
+
+@keyframes moveMsg {
+  0% {
+    opacity: 0;
+    transform: translate(0, 2) scale(0);
+}
+50% {
+    opacity: 0.8;
+    transform: translate(2%, 90%) scale(0);
+}
+100% {
+    opacity: 1;
+    transform: translate(-2, 2%) scale(1);
+}
+}
+
+
+
+
+/*Screen2*/
+
+#msg {
+  margin-top: 1.7rem;
+  font-family: 'Dancing Script', cursive;
+  background-color: #E4EDF1;
+  padding: 1rem;
+  box-shadow: .2rem .2rem .2rem 0 rgba(5, 5, 5, 50%);
+  font-size: 2.2rem;
+  animation: moveMsg 1s ease-in ;
+  border-radius: 0.5rem;
+  
+  
+}
+
+#cookie2 {
+
+  width: min(30rem, 100%);
+  
+}
+
+button {
+  padding: 1.6rem;
+  background-color: #FF9500;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  position:sticky;
+  left: 50%;
+  transform: translate(-45%, -0%);
+  cursor: pointer;
+
+}
+button:hover{
+  background-color: #ea8b06;
+}
+
